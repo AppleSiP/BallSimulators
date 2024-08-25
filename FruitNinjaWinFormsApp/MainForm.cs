@@ -59,7 +59,7 @@ namespace FruitNinjaWinFormsApp
             {
                 fruit.Stop();
             }
-            var result = MessageBox.Show($"Вы проиграли, ваш результат {scoreLabel.Text}\nНажмите .\"ОК\" чтобы начать заново,\nили \"Отмена\" чтобы выйти", "Конец!",MessageBoxButtons.OKCancel);
+            var result = MessageBox.Show($"Р’С‹ РїСЂРѕРёРіСЂР°Р»Рё, РІР°С€ СЂРµР·СѓР»СЊС‚Р°С‚ {scoreLabel.Text}\nРќР°Р¶РјРёС‚Рµ .\"РћРљ\" С‡С‚РѕР±С‹ РЅР°С‡Р°С‚СЊ Р·Р°РЅРѕРІРѕ,\nРёР»Рё \"РћС‚РјРµРЅР°\" С‡С‚РѕР±С‹ РІС‹Р№С‚Рё", "РљРѕРЅРµС†!",MessageBoxButtons.OKCancel);
             if (result == DialogResult.OK)
             {
                 Application.Restart();

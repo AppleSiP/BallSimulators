@@ -20,7 +20,6 @@ namespace SalutWinFormsApp
             if (vY > 0)
             {
                 Stop();
-                //Clear(); - почему-то рисует уже после Stop();
                 brush = Brushes.White;
                 TopReached?.Invoke(this, new TopReachedEventArgs(centerX, centerY));
             }

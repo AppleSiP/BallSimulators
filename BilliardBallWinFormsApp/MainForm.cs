@@ -56,7 +56,7 @@ namespace BilliardBallWinFormsApp
                 {
                     ball.Stop();
                 }
-                MessageBox.Show("Диффузия!", "Упс!");
+                MessageBox.Show("Р”РёС„С„СѓР·РёСЏ!", "РЈРїСЃ!");
                 playToolStripMenuItem.Visible = false;
                 balls.Clear();
             }
@@ -117,7 +117,7 @@ namespace BilliardBallWinFormsApp
             Freeze();
         }
 
-        private void перезапускToolStripMenuItem_Click(object sender, EventArgs e)
+        private void РїРµСЂРµР·Р°РїСѓСЃРєToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Restart();
         }
@@ -127,13 +127,13 @@ namespace BilliardBallWinFormsApp
             {
                 balls[i].TimeSwitch();
             }
-            if (playToolStripMenuItem.Text == "Старт")
+            if (playToolStripMenuItem.Text == "РЎС‚Р°СЂС‚")
             {
-                playToolStripMenuItem.Text = "Cтоп";
+                playToolStripMenuItem.Text = "CС‚РѕРї";
             }
             else
             {
-                playToolStripMenuItem.Text = "Старт";
+                playToolStripMenuItem.Text = "РЎС‚Р°СЂС‚";
             }
         }
 

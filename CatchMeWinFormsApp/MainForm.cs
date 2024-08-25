@@ -41,7 +41,7 @@ namespace CatchMeWinFormsApp
                         balls.Remove(balls[i]);
                         countCatchBalls++;
                     }
-                    countcatchBallsLabel.Text = $"Поймано: {countCatchBalls}";
+                    countcatchBallsLabel.Text = $"РџРѕР№РјР°РЅРѕ: {countCatchBalls}";
                 }
             }
         }
@@ -56,7 +56,7 @@ namespace CatchMeWinFormsApp
 
         private void statusTimer_Tick(object sender, EventArgs e)
         {
-            var ending = "ов";
+            var ending = "РѕРІ";
             switch (countCatchBalls % 10)
             {
                 case 1: ending = ""; break;
@@ -66,18 +66,18 @@ namespace CatchMeWinFormsApp
             }
             if (countCatchBalls % 100 == 11)
             {
-                ending = "ов";
+                ending = "РѕРІ";
             }
             if (FieldHelper.Empty(balls))
             {
                 statusTimer.Enabled = false;
                 if (countCatchBalls == 0)
                 {
-                    MessageBox.Show("Все шарики убежали!\nВы проиграли!");
+                    MessageBox.Show("Р’СЃРµ С€Р°СЂРёРєРё СѓР±РµР¶Р°Р»Рё!\nР’С‹ РїСЂРѕРёРіСЂР°Р»Рё!");
                 }
                 else
                 {
-                    MessageBox.Show($"Ваш результат: {countCatchBalls} шар{ending}");
+                    MessageBox.Show($"Р’Р°С€ СЂРµР·СѓР»СЊС‚Р°С‚: {countCatchBalls} С€Р°СЂ{ending}");
                 }
                 startButton.Enabled = true;
                 clearButton.Enabled = false;

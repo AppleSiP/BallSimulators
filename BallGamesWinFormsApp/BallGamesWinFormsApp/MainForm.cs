@@ -38,7 +38,7 @@ namespace BallGamesWinFormsApp
                     countBalls++;
                 }
             }
-            var message = $"Ваш результат {countBalls} шаров";
+            var message = $"Р’Р°С€ СЂРµР·СѓР»СЊС‚Р°С‚ {countBalls} С€Р°СЂРѕРІ";
             DialogResult result = MessageBox.Show(message);
             if (result == DialogResult.OK)
             {
@@ -54,7 +54,7 @@ namespace BallGamesWinFormsApp
             if (FieldHelper.Empty(balls))
             {
                 statusTimer.Stop();
-                MessageBox.Show("Все шарики убежали!\nВы проиграли!");
+                MessageBox.Show("Р’СЃРµ С€Р°СЂРёРєРё СѓР±РµР¶Р°Р»Рё!\nР’С‹ РїСЂРѕРёРіСЂР°Р»Рё!");
                 startButton.Enabled = true;
                 stopButton.Enabled = false;
             }
